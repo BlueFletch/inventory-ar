@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#535353</color>
+    <color name="colorPrimaryDark">#393939</color>
+    <color name="colorAccent">#fc6b3c</color>
+
+    <color name="highlight">#fc6b3c</color>
+    <color name="white">#ffffff</color>
+
+    <!-- for spark charts -->
+    <color name="line_color">@color/highlight</color>
+    <dimen name="line_width">2dp</dimen>
+    <dimen name="corner_radius">@dimen/spark_corner_radius</dimen>
+    <color name="base_line_color">@color/spark_base_line_color</color>
+    <dimen name="base_line_width">2dp</dimen>
+    <color name="scrub_line_color">@color/spark_scrub_line_color</color>
+    <dimen name="scrub_line_width">@dimen/spark_scrub_line_width</dimen>
+
+</resources>

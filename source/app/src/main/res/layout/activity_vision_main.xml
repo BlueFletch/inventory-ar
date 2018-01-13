@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.bluefletch.visioninventory.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.bluefletch.visioninventory.ui.camera.CameraSourcePreview>
+
+    <com.bluefletch.visioninventory.ui.camera.PreviewOverlay
+        android:id="@+id/previewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cameraSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_settings_highlight_24dp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/highlight"
+            app:tabIndicatorHeight="4dp"
+            app:tabSelectedTextColor="@color/highlight"
+            app:tabTextColor="#ffffff">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INVENTORY" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SALES" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE" />
+
+        </android.support.design.widget.TabLayout>
+
+    </com.bluefletch.visioninventory.ui.camera.PreviewOverlay>
+
+
+    <include layout="@layout/product_detail_overlay" />
+
+
+</FrameLayout>

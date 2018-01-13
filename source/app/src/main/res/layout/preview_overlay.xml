@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="86dp"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:background="@android:color/background_light"
+                    android:minWidth="86dp"
+                    android:visibility="visible">
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="6dp"
+                            android:background="@color/highlight" />
+
+                        <TextView
+                            android:id="@+id/overlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/montserrat"
+                            android:text="-999%"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="32sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@+id/overlayText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/circle" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

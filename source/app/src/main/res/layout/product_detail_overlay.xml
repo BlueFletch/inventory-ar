@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlayDetailContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:elevation="4dp"
+    android:visibility="visible">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/scrollChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/closeDetailButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignBaseline="@+id/productName"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/ic_close_black_24dp" />
+
+            <TextView
+                android:id="@+id/productName"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/closeDetailButton"
+                android:fontFamily="@font/montserrat"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="Product Name"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/metricsLayout"
+                android:alpha="0.12"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:id="@+id/metricsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productName"
+                android:divider="@color/highlight"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:id="@+id/metricLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp">
+
+                    <com.robinhood.spark.SparkView
+                        android:id="@+id/spark01"
+                        style="@style/DetailSparkStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/metric01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spark01"
+                        android:fontFamily="@font/montserrat"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/metric01"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Units Sold Last Week" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/metricLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/productName"
+                    android:layout_weight="1"
+                    android:padding="16dp">
+
+                    <com.robinhood.spark.SparkView
+                        android:id="@+id/spark02"
+                        style="@style/DetailSparkStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/metric02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spark02"
+                        android:fontFamily="@font/montserrat"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/metric02"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Sales % Last Week" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/metricLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp">
+
+                    <com.robinhood.spark.SparkView
+                        android:id="@+id/spark03"
+                        style="@style/DetailSparkStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/metric03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spark03"
+                        android:fontFamily="@font/montserrat"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/metric03"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Weeks On Hand" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/productName"
+                android:alpha="0.12"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/metricsLayout"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/productBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Barcode" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.12"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/labelProductLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Product Label NAme" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.12"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Price" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.12"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/productUnits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Units" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.12"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/productUnitType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Unit Type" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

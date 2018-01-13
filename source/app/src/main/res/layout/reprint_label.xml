@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/reprintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:text="Reprint Label?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnReprint"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/reprintText"
+            android:background="@color/highlight"
+            android:fontFamily="@font/montserrat"
+            android:text="OK"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btnReprintCancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reprintText"
+            android:layout_marginRight="16dp"
+            android:layout_toStartOf="@+id/btnReprint"
+            android:fontFamily="@font/montserrat"
+            android:text="DISMISS" />
+    </RelativeLayout>
+
+</FrameLayout>

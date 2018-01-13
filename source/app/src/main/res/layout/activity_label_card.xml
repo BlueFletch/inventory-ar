@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    >
+
+    <CheckBox
+        android:id="@+id/labelSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/labelProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/labelProductDesc"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/labelSelect"
+        android:fontFamily="@font/montserrat"
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/labelProductDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelProductLabel"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/labelSelect"
+        android:layout_toStartOf="@+id/labelEditPrice"
+        android:fontFamily="@font/montserrat"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/labelProductBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/labelProductDesc"
+        android:layout_alignStart="@+id/labelProductDesc"
+        android:layout_below="@+id/labelProductDesc"
+        android:fontFamily="@font/montserrat"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/labelEditPrice"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark" />
+</RelativeLayout>

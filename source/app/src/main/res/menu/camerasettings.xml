@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/zoom10"
+        android:title="Zoom x1" />
+    <item android:id="@+id/zoom12"
+        android:title="Zoom x1.2" />
+    <item android:id="@+id/zoom15"
+        android:title="Zoom x1.5" />
+    <item android:id="@+id/zoom17"
+        android:title="Zoom x1.7" />
+    <item android:id="@+id/zoom20"
+        android:title="Zoom x2" />
+
+    <item android:id="@+id/frame10"
+        android:title="10 fps" />
+    <item android:id="@+id/frame15"
+        android:title="15 fps" />
+    <item android:id="@+id/frame24"
+        android:title="24 fps" />
+    <item android:id="@+id/frame30"
+        android:title="30 fps" />
+</menu>
